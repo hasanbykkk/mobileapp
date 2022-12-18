@@ -24,9 +24,8 @@ const Settings = (props) => {
 
   const addDiary = () => {
     let a = {id:idx, diary:txt};
-    setdiarys(prev=>[...prev,a]); //[]로 배열화 하는것 왜냐? 위가 배열이기에.
-    setWriteMode(false); // 화면이 닫히게 하는것.
-
+    setdiarys(prev=>[...prev,a]); 
+    setWriteMode(false); 
     setIdx(prev=>prev+1);
   }
 
